@@ -1,4 +1,5 @@
 jedi
 autopep8
 pylint
+pylint-django
 pynvim
