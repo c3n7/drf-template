@@ -11,6 +11,8 @@ class CustomPasswordResetSerializer(PasswordResetSerializer):
             'request': request,
             # here I have set my desired template to be used
             # don't forget to add your templates directory in settings to be found
+            # Reference:
+            # /venv/lib/python3.9/site-packages/django/contrib/admin/templates/registration/
             'email_template_name': 'password_reset_email.html'
         }
 
