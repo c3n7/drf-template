@@ -18,7 +18,7 @@ To deal with pylint's issues like `model has no objects property`, add a local c
   ```shell
   :CocLocalConfig
   ```
-  - The above command will create a .`vim/coc-settings.json` file. Add this to it:
+  - The above command will create a `.vim/coc-settings.json` file. Add this to it:
   ```json
   {
     "python.linting.pylintArgs": [
