@@ -26,9 +26,29 @@ To deal with pylint's issues like `model has no objects property`, add a local c
       "--load-plugins=pylint_django",
       "--load-plugins=pylint_django.checkers.migrations",
       "--disable=django-not-configured",
-      "--django-settings-module=todo.settings",
+      "--django-settings-module=backend.settings",
 
       "--disable=C0114, C0115, C0116"
     ]
   }
   ```
+
+### VS Code/Codium
+Assuming you've set-up and activated a virtual enviroment, install development requirements:
+```shell
+pip install autopep8 pylint pylint-django
+```
+To deal with pylint's django-related issues like the aforementioned `model has no objects property`, add a workspace configuration file in `.vscode/settings.json` with the following contents:
+```json
+{
+    "python.pythonPath": "venv/bin/python",
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django",
+        "--load-plugins=pylint_django.checkers.migrations",
+        "--disable=django-not-configured",
+        "--django-settings-module=backend.settings",
+        "--disable=C0114, C0115, C0116"
+    ]
+}
+```
+where `venv/` is the folder containing your virtual environment.
