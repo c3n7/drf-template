@@ -23,7 +23,7 @@ schema_view = get_schema_view(
     openapi.Info(
         title="Dhurabini API",
         default_version="v1",
-        description="Dhurabini HUdhibiti Rasilimali BIasharaNI API",
+        description="Dhurabini HUdhibiti Raslimali BIasharaNI API",
         terms_of_service="https://github.com/c3n7/dhurabini-backend/blob/main/COPYING",
         contact=openapi.Contact(email="kartimothy@gmail.com"),
         license=openapi.License(name="AGPL-3.0-or-later"),
