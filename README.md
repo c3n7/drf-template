@@ -51,3 +51,10 @@ To deal with pylint's django-related issues like the aforementioned `model has n
 }
 ```
 where `venv/` is the folder containing your virtual environment.
+
+
+## Setting up CI/DevOps workflows
+### Codecov
+- Add the repository to [codecov](https://codecov.io) to get a _CODECOV_TOKEN_.
+- In your project's GitHub repository `settings` > `secrets`, click `New repository secret` and add the _CODECOV_TOKEN_.
+
