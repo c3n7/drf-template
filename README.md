@@ -1,6 +1,6 @@
 # DRF Template
   
-![license](https://img.shields.io/badge/license-MIT%200 License-blue)
+![license](https://img.shields.io/badge/license-MIT%200-blue)
 ![org](https://img.shields.io/badge/org-c3n7-blueviolet)
 [![codecov](https://codecov.io/gh/c3n7/drf-template/branch/main/graph/badge.svg?token=7THQZX09H3)](https://codecov.io/gh/c3n7/drf-template)
 [![Python package](https://github.com/c3n7/drf-template/actions/workflows/main.yml/badge.svg)](https://github.com/c3n7/drf-template/actions/workflows/main.yml)
