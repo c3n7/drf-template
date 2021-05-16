@@ -60,9 +60,9 @@ where `venv/` is the folder containing your virtual environment.
 ### Build Badges
   
 **Codecov**
--  Go to <a>https://app.codecov.io/gh/`your-user-name`/`your-repository`/settings/badge</a>, copy the markdown for the badge and paste it here in the readme.
+-  Go to ***https://app.codecov.io/gh/<code>your-user-name</code>/`your-repository`/settings/badge***, copy the markdown for the badge and paste it here in the readme.
   
 **Github**
-- Go to <a>https://github.com/`your-user-name`/`your-repository`/actions/workflows/main.yml</a>, then click on the three dots (`...`) button next to the `Filter workflow runs`, click on `create status badge`, copy then paste the markdown here in the readme.
+- Go to ***https://github.com/<code>your-user-name</code>/`your-repository`/actions/workflows/main.yml***, then click on the three dots (`...`) button next to the `Filter workflow runs`, click on `create status badge`, copy then paste the markdown here in the readme.
 
 ## .env keys
