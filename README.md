@@ -1,5 +1,4 @@
-# Dhurabini Backend
-**D**hurabini **hu**dhibiti **ra**slimali **bi**ashara**ni**  
+# DRF Template
   
 ![license](https://img.shields.io/badge/license-mit-blue)
 ![org](https://img.shields.io/badge/org-c3n7-blueviolet)
