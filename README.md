@@ -58,3 +58,10 @@ where `venv/` is the folder containing your virtual environment.
 - Add the repository to [codecov](https://codecov.io) to get a _CODECOV_TOKEN_.
 - In your project's GitHub repository `settings` > `secrets`, click `New repository secret` and add the _CODECOV_TOKEN_.
 
+### Build Badges
+  
+**Codecov**
+-  Go to <a>https://app.codecov.io/gh/`your-user-name`/`your-repository`/settings/badge</a>, copy the markdown for the badge and paste it here in the readme.
+  
+**Github**
+- Go to <a>https://github.com/`your-user-name`/`your-repository`/actions/workflows/main.yml</a>, then click on the three dots (`...`) button next to the `Filter workflow runs`, click on `create status badge`, copy then paste the markdown here in the readme.
