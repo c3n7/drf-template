@@ -1,13 +1,26 @@
-{% load i18n %}{% load account %}{% autoescape off %}
-{% blocktrans with site_name=current_site.name %}Hello from {{ site_name }}!
-{%endblocktrans %}
-
-{% block content %}{% autoescape off %}{% user_display user as user_display %}{% blocktrans with
-site_name=current_site.name site_domain=current_site.domain %}You are receiving this e-mail because user {{ user_display
-}} has given your e-mail address to register an account on {{ site_domain }}.
-
-To confirm this is correct, go to {{ activate_url.split('/')[:-2] }}{% endblocktrans %}{% endautoescape %}{% endblock %}
-
-{% blocktrans with site_name=current_site.name site_domain=current_site.domain %}Thank you for using {{ site_name }}!
-{{ site_domain }}{% endblocktrans %}
-{% endautoescape %}
+{% load i18n %}{% load get_token %}{% load account %}
+<p>
+  {% blocktrans with site_name=current_site.name %}Hello from {{ site_name }}!
+  {%endblocktrans %}
+</p>
+<div>
+  {% block content %}{% user_display user as user_display %}
+  {% blocktrans with site_name=current_site.name site_domain=current_site.domain %}
+  <p>
+    You are receiving this e-mail because your e-mail address has been used to register
+    an account on {{ site_domain }}.
+  </p>
+  <p>
+    To confirm this is correct, copy the unique value in bold below:{% endblocktrans %}
+  </p>
+  {% endblock %}
+</div>
+<p>
+  <strong>{{ activate_url|get_token }}</strong>
+</p>
+<p>
+  {% blocktrans with site_name=current_site.name site_domain=current_site.domain %}Thank you for using {{ site_name }}!
+  {% endblocktrans %}
+  <br>
+  {{ site_domain }}
+</p>
