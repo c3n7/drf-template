@@ -3,16 +3,18 @@
   {% blocktrans with site_name=current_site.name %}Hello from {{ site_name }}!
   {%endblocktrans %}
 </p>
-<p>
+<div>
   {% block content %}{% user_display user as user_display %}
   {% blocktrans with site_name=current_site.name site_domain=current_site.domain %}
-  You are receiving this e-mail because
-  user {{ user_display }} has given your e-mail address to register an account on {{ site_domain }}.
-</p>
-<p>
-  To confirm this is correct, copy the unique value in bold below:{% endblocktrans %}
+  <p>
+    You are receiving this e-mail because your e-mail address has been used to register
+    an account on {{ site_domain }}.
+  </p>
+  <p>
+    To confirm this is correct, copy the unique value in bold below:{% endblocktrans %}
+  </p>
   {% endblock %}
-</p>
+</div>
 <p>
   <strong>{{ activate_url|get_token }}</strong>
 </p>
